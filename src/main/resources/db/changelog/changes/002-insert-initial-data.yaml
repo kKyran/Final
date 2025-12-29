@@ -1,0 +1,71 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: gemini
+      changes:
+        - insert:
+            tableName: course
+            columns:
+              - column:
+                  name: name
+                  value: "Java Development"
+        - insert:
+            tableName: course
+            columns:
+              - column:
+                  name: name
+                  value: "Frontend Development"
+        - insert:
+            tableName: operator
+            columns:
+              - column:
+                  name: full_name
+                  value: "John Doe"
+        - insert:
+            tableName: operator
+            columns:
+              - column:
+                  name: full_name
+                  value: "Jane Smith"
+        - insert:
+            tableName: application_request
+            columns:
+              - column:
+                  name: user_name
+                  value: "Test User 1"
+              - column:
+                  name: commentary
+                  value: "Comment 1"
+              - column:
+                  name: phone
+                  value: "+1234567890"
+              - column:
+                  name: handled
+                  valueBoolean: false
+              - column:
+                  name: course_id
+                  valueNumeric: 1
+              - column:
+                  name: operator_id
+                  valueNumeric: 1
+        - insert:
+            tableName: application_request
+            columns:
+              - column:
+                  name: user_name
+                  value: "Test User 2"
+              - column:
+                  name: commentary
+                  value: "Comment 2"
+              - column:
+                  name: phone
+                  value: "+0987654321"
+              - column:
+                  name: handled
+                  valueBoolean: true
+              - column:
+                  name: course_id
+                  valueNumeric: 2
+              - column:
+                  name: operator_id
+                  valueNumeric: 2

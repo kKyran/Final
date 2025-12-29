@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/001-create-initial-schema.yaml
+  - include:
+      file: db/changelog/changes/002-insert-initial-data.yaml
+  - include:
+      file: db/changelog/changes/003-create-user-role-schema.yaml
+  - include:
+      file: db/changelog/changes/004-create-student-table.yaml
+  - include:
+      file: db/changelog/changes/005-create-teacher-table.yaml
+  - include:
+      file: db/changelog/changes/006-create-group-table.yaml
+  - include:
+      file: db/changelog/changes/007-create-lesson-table.yaml
+  - include:
+      file: db/changelog/changes/008-create-payment-table.yaml
+  - include:
+      file: db/changelog/changes/009-create-schedule-table.yaml
